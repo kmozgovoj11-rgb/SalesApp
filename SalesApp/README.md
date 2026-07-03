@@ -4,7 +4,6 @@
 
 ## Архитектура проекта
 
-```
 SalesApp/
 ├── salesapp/              # Python-код приложения
 │   ├── config.py          # пути и настройки
@@ -22,7 +21,6 @@ SalesApp/
 ├── start.bat              # запуск для клиента
 ├── create_shortcut.bat    # ярлык на рабочий стол
 └── build_client.bat       # сборка ZIP
-```
 
 ## Быстрый старт
 
@@ -33,26 +31,3 @@ py -3 -m venv .venv
 pip install -r requirements.txt
 py -3 -m streamlit run salesapp/ui.py
 ```
-
-## Настройка каталога
-
-Редактируйте `data/products.json`:
-
-```json
-[
-  { "name": "Стрижка", "price": 1200 },
-  { "name": "Маникюр", "price": 1800 }
-]
-```
-
-## Сборка для клиента (Windows)
-
-```text
-build_client.bat
-```
-
-Создаёт `sales_app_client.zip` на рабочем столе.
-
-## Лицензия
-
-MIT
